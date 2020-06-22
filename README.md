@@ -2,7 +2,7 @@
 Course Assignment (CS-521):- Fundamentals Of Data Science
 
 
-Problem Statement:-
+# Problem Statement:-
 
 You will analyse the State of the Union speeches corpus, and
 report on how the subjects have shifted over time in relation to historical events.
@@ -14,7 +14,7 @@ csv.field_size_limit(1000000000) to the top of your program to be able to read t
 The file is a csv with columns year, text. Note: there are some years where there was more than one speech!
 Design your data structures accordingly.
 
-Task 1. 
+## Task 1. 
 Feed the data into the gensim Python package. Now you need to load the documents into Python and
 feed them into the gensim package to generate tf-idf weighted document vectors. Check out the
 gensim example code here. You will need to go through the file twice: once to generate the
@@ -26,7 +26,7 @@ the simplest, stupidest thing, which is to lowercase the string and split on spa
 use a better stopword list, such as this one. Once you have your Corpus object, tell gensim to
 generate tf-idf scores for you.
 
-Task 2. 
+## Task 2. 
 Do LSI topic modeling. You can apply Latent Semantic Indexing (LSI) to the tf-idf vectors. You will have
 to supply the number of topics to generate. Figuring out a good number is part of the assignment.
 Print out the resulting topics, each topic as a list of word coefficients. Now, sample ten topics
@@ -36,13 +36,13 @@ documents that contain high proportions of that topic, and you will likely find 
 no clear concept. Write in your report: your annotated topics plus a comment on how well you feel
 each “topic” captured a real human concept.
 
-Task 3. 
+## Task 3. 
 Now do LDA topic modeling. Repeat the exercise of step 3 but with LDA instead, again trying to
 annotate ten randomly sampled topics. What is different? Write in your report: your annotated
 topics plus a comment on how LDA differed from LSI.
 
 
-Task 4.
+## Task 4.
 Come up with a method to figure out how topics of speeches have changed over time: The goal is to
 summarize changes in the State of the Union speech in each decade of the 20th and 21st century.
 There are many different ways to use topic modeling to do this. Possibilities include: visualizations,
@@ -56,7 +56,7 @@ patterns do you see? Can you connect the terms to major historical events? (wars
 depression, assassinations, the civil rights movement, Watergate...)
 
 
-Task 5. 
+## Task 5. 
 
 Analyze a different document set: Try LDA on a different document set, this collection of AP wire
 stories. Repeat the process of choosing the number of topics, fitting a model, and interpreting a
